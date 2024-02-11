@@ -20,7 +20,6 @@ export const MobileSidebar = () => {
   const isOpen = useMobileSidebar((state) => state.isOpen);
 
   useCloseAfterNavigation({ onClose, pathname });
-  console.log(isOpen);
   if (!isMounted) return;
 
   return (
